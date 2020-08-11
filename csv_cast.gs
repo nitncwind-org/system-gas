@@ -28,3 +28,25 @@ function convertSp2Csv(file_id) {
   Logger.log(data.join("\r\n"));
   return data.join("\r\n");
 }
+
+// Convert params to file
+function convertP2f(key) {
+  switch(key) {
+    case 'about':
+      return ABOUT_CSV_ID;
+    case 'concerts':
+      return CONCERTS_CSV_ID;
+    case 'winds':
+      return WINDS_CSV_ID;
+    case 'ensemble':
+      return ENSEMBLE_CSV_ID;
+    case 'link':
+      return LINK_CSV_ID;
+    case 'contact':
+      return CONTACT_CSV_ID;
+    case 'news':
+      return NEWS_CSV_ID;
+    default:
+      return '0';
+  }
+}
