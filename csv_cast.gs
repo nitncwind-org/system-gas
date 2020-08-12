@@ -8,7 +8,7 @@ function doGet(e) {
   
   // 0（存在しない）ときは文字列返す
   if (file_id == '0') {
-    ContentService.createTextOutput().setMimeType(ContentService.MimeType.TEXT).setContent("404");
+    return ContentService.createTextOutput().setMimeType(ContentService.MimeType.TEXT).setContent("404");
   }
   
   // CSVデータを取得
