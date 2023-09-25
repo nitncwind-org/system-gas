@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <base target=”_top”>
+  </head>
+  <body>
+    <?= param.name ?> 様 <br><br>
+
+    <p>
+      お問い合わせありがとうございます．ご返信には1週間ほどかかる場合がございます．<br>
+      2週間以上経過しても返信がない場合，お手数をおかけしますが再度お問い合わせをしていただくか，
+      <strong>info@nitncwind.org</strong> までご連絡頂くようよろしくお願いいたします．
+    </p>
+    <br>
+
+    <h2>お問い合わせ内容</h2>
+
+    <h3>お名前</h3>
+    <p> <?= param.name ?> </p>
+
+    <h3>所属・団体名</h3>
+    <p> <?= param.affiliation ?> &emsp; <?= param.affiliation_kosen ?> &emsp; <?= param.affiliation_group ?></p>
+
+    <h3>メールアドレス</h3>
+    <p> <?= param.mail ?> </p>
+
+    <h3>お問い合わせ内容</h3>
+    <p> <?= param.inquiry ?> &emsp; <?= param.content ?> </p>
+
+    <br>
+    受付日：<?= now ?>
+    <br><br><br>
+    <p>
+      &copy; 2020- <a href="https://nitncwind.org/">奈良高専吹奏楽部</a>
+    </p>
+  </body>
+</html>
